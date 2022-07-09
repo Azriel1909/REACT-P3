@@ -1,0 +1,20 @@
+.botonlimpiar {
+    height: 50px;
+    font-size: 1.6em;
+    /*Unidad relativa*/
+    display: flex;
+    flex: 1;
+    background-color: rgb(184, 94, 134);
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border-radius: 2em;
+    user-select: none;
+}
+
+.botonlimpiar:hover {
+    background-color: rgb(139, 71, 102);
+}
+

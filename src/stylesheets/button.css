@@ -1,0 +1,41 @@
+:root {
+  /*Font family*/
+  --ff-primary:'Inconsolata', monospace;
+  --ff-secondary:'Oswald', sans-serif;
+  /*Coloured boxes*/
+  --color-backLight:white;
+  --color-dark:rgb(38, 38, 38);
+  --color-accent:rgb(243, 121, 176);
+  --color-backDark:#616161;
+  --color-backDark1:#3a3a3a;
+  --color-accent1:rgb(184, 94, 134);
+}
+
+.contenedorBoton {
+  height: 70px;
+  flex: 1 1; /*Cuanto se puede expandir el componente en base a otros componentes*/
+  display: flex; /*Alinear Texto*/
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 2em;
+  background-color: var(--color-backDark1);
+  color: var(--color-accent);
+  border-radius: 1em;
+  border: 2px solid var(--color-backDark1);
+  margin: 4px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.operador {
+  background-color: var(--color-accent);
+  color: var(--color-backDark1);
+  border: 2px solid var(--color-accent);
+}
+
+.contenedorBoton:hover {
+  background-color: var(--color-accent1);
+  color: var(--color-backLight);
+  border: 2px solid var(--color-accent1);
+}

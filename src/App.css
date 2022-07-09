@@ -1,38 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /*Font family*/
+  --ff-primary:'Inconsolata', monospace;
+  --ff-secondary:'Oswald', sans-serif;
+  /*Coloured boxes*/
+  --color-backLight:white;
+  --color-dark:rgb(38, 38, 38);
+  --color-accent:rgb(243, 121, 176);
+  --color-backDark:#616161;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
+  padding: 10px;
+  background-color: var(--color-dark);
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pinkHatLogoContenedor {
+  width: 100%;
+  height: 50px;
+  margin: 8px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.pinkHatLogoPicture {
+  height: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.calculadoraContenedor {
+  width: 400px;
+  height: 500px;
+  padding: 14px;
+  background-color: var(--color-backDark);
+  border-radius: 1em;
+  border-radius: 19px;
+  border: 4px solid var(--color-accent);
+}
+
+.fila {
+  margin: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
